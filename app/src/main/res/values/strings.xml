@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TaskTodoApp</string>
+    <string name="sonu_kumar">Sonu Kumar</string>
+    <string name="today_task">Today Task</string>
+    <string name="task_name">Task Name</string>
+    <string name="pick_date">Pick date</string>
+    <string name="save">Save</string>
+    <string name="task_description">Task Description</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="edit_todo_task">Edit Todo Task</string>
+    <string name="collage">Collage</string>
+    <string name="english_class_01">English Class 01</string>
+</resources>

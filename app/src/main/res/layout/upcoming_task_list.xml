@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardBackgroundColor="@color/dark_white"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/task_upcoming_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/english_class_01"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/task_upcoming_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/collage"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_alignParentStart="true" />
+                <ImageButton
+                    android:id="@+id/delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/ic_baseline_delete_24"
+                    tools:ignore="ContentDescription"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/task_upcoming_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:00 AM"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="16dp"
+                android:drawablePadding="10dp"
+                android:layout_alignParentLeft="true"
+                android:drawableLeft="@drawable/ic_baseline_access_time_24"
+                android:drawableTint="@color/white"
+                android:layout_marginStart="16dp"
+                android:layout_alignParentStart="true" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="16dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        tools:srcCompat="@tools:sample/avatars" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        tools:srcCompat="@tools:sample/avatars"
+                        android:layout_marginLeft="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        tools:srcCompat="@tools:sample/avatars"
+                        android:layout_marginLeft="30dp"/>
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
