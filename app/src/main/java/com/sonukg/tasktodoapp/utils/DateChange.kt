@@ -38,6 +38,13 @@ class DateChange {
         return dateFormat.format(Calendar.getInstance().time)
     }
 
+    @SuppressLint("SimpleDateFormat")
+    fun getTomorrow(): String? {
+        val cal: Calendar = GregorianCalendar()
+        cal.add(Calendar.DATE, 1)
+        return SimpleDateFormat("yyyy/MM/dd").format(cal.time)
+    }
+
     fun getTime(): String {
         @SuppressLint("SimpleDateFormat") val dateFormat: DateFormat =
             SimpleDateFormat("HH:mm")
